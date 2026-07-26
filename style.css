@@ -686,4 +686,15 @@ html {
     padding: 0 8px;             /* 左右に少しだけ余裕を持たせる */
     word-break: break-word;     /* 長い単語があっても端で綺麗に折り返す */
   }
+  
+  .card-container {
+    flex-direction: column; /* 横並びではなく「縦並び」に強制変更 */
+    align-items: center;    /* カードを中央に寄せる */
+  }
+
+  .card-container > div,
+  .card {
+    width: 100% !important;     /* カードの幅を100%にする */
+    max-width: 320px !important; /* 広がりすぎないように上限を指定 */
+  }
 }

@@ -16,7 +16,7 @@ body {
   display: flex;                /* 横並びにする指定 */
   justify-content: space-between; /* 会社名を左、リンクを右に振る */
   align-items: center;        /* 上下の中心を揃える */
-  padding: 0 40px;              /* 左右に余白を入れる */
+  padding: 15px 16px;              /* 左右に余白を入れる */
   height: 60px;                 /* ヘッダーの高さ */
   background-color: rgba(255, 255, 255, 0.8); /* 少し透ける白 */
   backdrop-filter: blur(20px);  /* 背景をぼかす（Appleっぽい高級感！） */
@@ -27,9 +27,10 @@ body {
 
 /* 2. 会社名（ロゴ）のスタイル */
 .logo {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  white-space: nowrap;
+  word-break: keep-all;
 }
 
 /* 3. リンクの横並び設定 */

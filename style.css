@@ -340,17 +340,19 @@ html {
 
 .about-table th, 
 .about-table td {
-  padding: 20px 24px;
+  padding: 16px 16px;
   text-align: left;
   border-bottom: 1px solid #f0f0f5;
-  font-size: 15px;
+  font-size: 14px;
+  word-break: break-word;
 }
 
 .about-table th {
-  width: 25%;
+  width: 30%;
   background-color: #fafafa;
   color: #1d1d1f;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .about-table td {

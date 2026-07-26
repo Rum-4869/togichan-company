@@ -115,8 +115,6 @@ body {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 /* カード1つずつの見た目 */

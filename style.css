@@ -651,3 +651,35 @@ html {
     margin-top: 8px;
   }
 }
+/* -----------------------------------
+   スマホ画面（幅600px以下）のはみ出し防止ルール
+----------------------------------- */
+@media (max-width: 600px) {
+
+  /* 1. ページ全体のはみ出しを強制リセット */
+  body, html {
+    overflow-x: hidden; /* 横スクロールが発生するのを防ぐ */
+    width: 100%;
+  }
+
+  /* 2. カード・サービス紹介項目の横幅をスマホサイズに最適化 */
+  .service-card,
+  .feature-card,
+  .card,
+  section {
+    max-width: 100% !important; /* 画面幅を超えないようにする */
+    box-sizing: border-box;     /* 枠線や余白を幅に含める計算にする */
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* 3. カード内のテキストの改行と余白を綺麗に調整 */
+  .service-card p,
+  .feature-card p,
+  .card p {
+    font-size: 14px;            /* スマホで読みやすいサイズ */
+    line-height: 1.6;           /* 行間をあけて読みやすく */
+    padding: 0 8px;             /* 左右に少しだけ余裕を持たせる */
+    word-break: break-word;     /* 長い単語があっても端で綺麗に折り返す */
+  }
+}

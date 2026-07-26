@@ -128,6 +128,9 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* うっすら影をつける */
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;           /* 基本は幅100%（スマホで1列） */
+  max-width: 320px;      /* PCでは大きくなりすぎないように制限 */
+  box-sizing: border-box;
 }
 
 /* マウスを乗せたときにちょっと浮き上がるアニメーション */
